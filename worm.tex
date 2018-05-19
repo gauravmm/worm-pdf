@@ -30,12 +30,9 @@
 \setulmarginsandblock{0.722in}{1.545in}{*}
 
 % defining the title and the author
-%\title{\LaTeX{} ePub Template}
-%\title{\textsc{How I Started to Love {\fontfamily{cmr}\selectfont\LaTeX{}}}}
-\title{My Two-line-long Title}
-\author{The Author}
-\newcommand{\ISBN}{0-000-00000-2}
-\newcommand{\press}{My very own studio}
+\title{Worm}
+\author{John C. ``Wildbow'' McCrae}
+\newcommand{\press}{\texttt{parahumans.wordpress.com}}
 
 % custom second title page
 \makeatletter
@@ -128,41 +125,58 @@
 \titleM
 \clearpage
 % copyright page
-\noindent{\small{This novel is entirely a work of fiction. The names, characters and incidents portrayed in it are the product of the author's imagination. Any resemblance to actual persons, living or dead, or events or localities is entirely coincidental.\par\vfill\noindent Paperback Edition\space\today\\ISBN\space\ISBN\\\copyright\space\theauthor. All rights reserved.\par\vfill\noindent\theauthor\space asserts the moral right to be identified as the author of this work. All rights reserved in all media. No part of this publication may be reproduced, stored in a retrieval system, or transmitted, in any form, or by any means, electronic, mechanical, photocopying, recording or otherwise, without the prior written permission of the author and/or the publisher.\par}}
+\noindent{\small{This novel is entirely a work of fiction. The names, characters and incidents portrayed in it are the product of the author's imagination. Any resemblance to actual persons, living or dead, or events or localities is entirely coincidental.\par\vfill\noindent Paperback Edition\space\today
+\\\copyright\space\theauthor. All rights reserved.
+\par\vfill\noindent\theauthor\space originally published this online at \press{}. This is a fan copy of his book, and is not for sale. \par}}
 \clearpage
-
-% dedication
-\begin{center}
-\itshape{\noindent{Dedicated to my all {\fontfamily{cmr}\selectfont\LaTeX{}} users.}}
-\end{center}
 
 % begin front matter
 \frontmatter
 \pagestyle{mystyle}
 % preface
 \chapter*{Preface}
-\lipsum[100-104]
-% acknowledgements
-\chapter*{Acknowledgements}
-\lipsum[1-9]
+\input{preface.tex}
 % table of contents
 \clearpage
 \tableofcontents*
 
 % begin main matter
 \mainmatter
-\chapter{Chapter One}
-\lipsum[1-20]
-\chapter{Chapter Two}
-\lipsum[21-40]
-\chapter{Chapter Three}
-\lipsum[41-60]
-\chapter{Chapter Four}
-\lipsum[61-80]
-\chapter{Chapter Five}
-\lipsum[81-100]
-\chapter{Chapter Six}
-\lipsum[101-120]
+
+\input{01/arc.tex}
+\input{02/arc.tex}
+\input{03/arc.tex}
+\input{04/arc.tex}
+\input{05/arc.tex}
+\input{06/arc.tex}
+\input{07/arc.tex}
+\input{08/arc.tex}
+\input{09/arc.tex}
+\input{10/arc.tex}
+
+\input{11/arc.tex}
+\input{12/arc.tex}
+\input{13/arc.tex}
+\input{14/arc.tex}
+\input{15/arc.tex}
+\input{16/arc.tex}
+\input{17/arc.tex}
+\input{18/arc.tex}
+\input{19/arc.tex}
+\input{20/arc.tex}
+
+\input{21/arc.tex}
+\input{22/arc.tex}
+\input{23/arc.tex}
+\input{24/arc.tex}
+\input{25/arc.tex}
+\input{26/arc.tex}
+\input{27/arc.tex}
+\input{28/arc.tex}
+\input{29/arc.tex}
+\input{30/arc.tex}
+
+\input{ep/arc.tex}
 
 % begin back matter
 

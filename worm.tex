@@ -11,6 +11,7 @@
 \usepackage{setspace} % for line spacing
 \usepackage{lettrine} % for drop caps and awesome chapter beginnings
 \usepackage{titlesec} % for manipulation of chapter titles
+\usepackage{amssymb}
 \usepackage{comment}
 
 % for placeholder text
@@ -106,11 +107,15 @@
     \pagestyle{mystyle}
 % END HEADER AND FOOTER MANIPULATION
 
-% table of contents customisation
+% table of contents customization
 \renewcommand\contentsname{\normalfont\scshape Contents}
 \renewcommand\cftchapterfont{\normalfont}
 \renewcommand{\cftchapterpagefont}{\normalfont}
 \renewcommand{\printtoctitle}{\centering\Huge}
+
+\newcommand{\sectionbreak}{\begin{center}
+    $\blacksquare$
+\end{center}}
 
 % layout check and fix
 \checkandfixthelayout
@@ -145,39 +150,42 @@
 \mainmatter
 
 \input{01/arc.tex}
-\input{02/arc.tex}
-\input{03/arc.tex}
-\input{04/arc.tex}
-\input{05/arc.tex}
-\input{06/arc.tex}
-\input{07/arc.tex}
-\input{08/arc.tex}
-\input{09/arc.tex}
-\input{10/arc.tex}
-
-\input{11/arc.tex}
-\input{12/arc.tex}
-\input{13/arc.tex}
-\input{14/arc.tex}
-\input{15/arc.tex}
-\input{16/arc.tex}
-\input{17/arc.tex}
-\input{18/arc.tex}
-\input{19/arc.tex}
-\input{20/arc.tex}
-
-\input{21/arc.tex}
-\input{22/arc.tex}
-\input{23/arc.tex}
-\input{24/arc.tex}
-\input{25/arc.tex}
-\input{26/arc.tex}
-\input{27/arc.tex}
-\input{28/arc.tex}
-\input{29/arc.tex}
-\input{30/arc.tex}
-
-\input{ep/arc.tex}
+\begin{comment}
+    
+    \input{02/arc.tex}
+    \input{03/arc.tex}
+    \input{04/arc.tex}
+    \input{05/arc.tex}
+    \input{06/arc.tex}
+    \input{07/arc.tex}
+    \input{08/arc.tex}
+    \input{09/arc.tex}
+    \input{10/arc.tex}
+    
+    \input{11/arc.tex}
+    \input{12/arc.tex}
+    \input{13/arc.tex}
+    \input{14/arc.tex}
+    \input{15/arc.tex}
+    \input{16/arc.tex}
+    \input{17/arc.tex}
+    \input{18/arc.tex}
+    \input{19/arc.tex}
+    \input{20/arc.tex}
+    
+    \input{21/arc.tex}
+    \input{22/arc.tex}
+    \input{23/arc.tex}
+    \input{24/arc.tex}
+    \input{25/arc.tex}
+    \input{26/arc.tex}
+    \input{27/arc.tex}
+    \input{28/arc.tex}
+    \input{29/arc.tex}
+    \input{30/arc.tex}
+    
+    \input{ep/arc.tex}
+\end{comment}
 
 % begin back matter
 

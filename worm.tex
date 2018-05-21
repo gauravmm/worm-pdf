@@ -11,6 +11,7 @@
 \usepackage{setspace} % for line spacing
 \usepackage{lettrine} % for drop caps and awesome chapter beginnings
 \usepackage{titlesec} % for manipulation of chapter titles
+\usepackage{tocloft}
 \usepackage{amssymb}
 \usepackage{comment}
 
@@ -112,6 +113,12 @@
 \renewcommand\cftchapterfont{\normalfont}
 \renewcommand{\cftchapterpagefont}{\normalfont}
 \renewcommand{\printtoctitle}{\centering\Huge}
+
+\cftsetindents{section}{0em}{2em}
+\cftsetindents{subsection}{0em}{2em}
+\setlength{\cftpartnumwidth}{2em}
+\renewcommand{\cftpartpresnum}{Arc\space}
+\renewcommand{\cftpartaftersnumb}{:}
 
 \newcommand{\sectionbreak}{\begin{center}
     $\blacksquare$

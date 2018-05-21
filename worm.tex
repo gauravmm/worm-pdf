@@ -14,6 +14,7 @@
 \usepackage{tocloft}
 \usepackage{amssymb}
 \usepackage{comment}
+\usepackage{etoolbox}
 
 % for placeholder text
 \usepackage{lipsum} % to generate Lorem Ipsum
@@ -123,6 +124,9 @@
 \renewcommand{\cftpartpresnum}{Arc\space}
 \renewcommand{\cftpartaftersnum}{:}
 
+% Change chapter numbering on pages in book:
+\renewcommand{\partname}{Arc}
+
 \setlength{\cftbeforechapterskip}{0.2em plus 0.1em minus 0em}
 \setlength{\cftchapterindent}{4em}
 % Remove chapter numberings:
@@ -132,6 +136,28 @@
 \makeatother
 \setlength{\cftchapternumwidth}{0pt}
 
+\makeatletter
+\def\@makeschapterhead#1{%
+    \vspace*{60\p@}%
+    {\parindent \z@ \centering \reset@font
+        \par\bigskip\nobreak
+        \interlinepenalty\@M
+        {\Huge #1}\par\nobreak
+            \vskip40\p@
+    }
+    \addcontentsline{toc}{chapter}{#1}
+    \markboth{\MakeUppercase{#1}}{}
+}
+\def\@makechapterhead#1{%
+    \vspace*{60\p@}%
+    {\parindent \z@ \centering \reset@font
+        \par\bigskip\nobreak
+        \interlinepenalty\@M
+        {\Huge #1}\par\nobreak
+            \vskip40\p@
+    }
+}
+\makeatother
 
 \newcommand{\sectionbreak}{\begin{center}
     $\blacksquare$

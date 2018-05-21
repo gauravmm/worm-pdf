@@ -116,9 +116,22 @@
 
 \cftsetindents{section}{0em}{2em}
 \cftsetindents{subsection}{0em}{2em}
-\setlength{\cftpartnumwidth}{2em}
+
+\setlength{\cftbeforepartskip}{2em plus 1em minus 0.5em}
+\setlength{\cftpartnumwidth}{4em}
+
 \renewcommand{\cftpartpresnum}{Arc\space}
-\renewcommand{\cftpartaftersnumb}{:}
+\renewcommand{\cftpartaftersnum}{:}
+
+\setlength{\cftbeforechapterskip}{0.2em plus 0.1em minus 0em}
+\setlength{\cftchapterindent}{4em}
+% Remove chapter numberings:
+\makeatletter
+\renewcommand{\cftchapterpresnum}{\begin{lrbox}{\@tempboxa}}
+\renewcommand{\cftchapteraftersnum}{\end{lrbox}}
+\makeatother
+\setlength{\cftchapternumwidth}{0pt}
+
 
 \newcommand{\sectionbreak}{\begin{center}
     $\blacksquare$

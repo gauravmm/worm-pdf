@@ -116,6 +116,8 @@
 \newcommand{\sectionbreak}{\begin{center}
     $\blacksquare$
 \end{center}}
+\newcommand{\strong}[1]{\textbf{#1}}
+\newcommand{\msgbox}[1]{\vspace{1mm}\par\noindent\fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{#1}}\vspace{2mm}}
 
 % layout check and fix
 \checkandfixthelayout
@@ -150,9 +152,9 @@
 \mainmatter
 
 \input{01/arc.tex}
+\input{02/arc.tex}
+
 \begin{comment}
-    
-    \input{02/arc.tex}
     \input{03/arc.tex}
     \input{04/arc.tex}
     \input{05/arc.tex}

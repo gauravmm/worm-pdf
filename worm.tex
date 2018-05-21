@@ -126,6 +126,8 @@
 
 % Change chapter numbering on pages in book:
 \renewcommand{\partname}{Arc}
+\renewcommand{\partnamefont}{\normalfont\huge}
+\renewcommand{\partnumfont}{\normalfont\huge}
 
 \setlength{\cftbeforechapterskip}{0.2em plus 0.1em minus 0em}
 \setlength{\cftchapterindent}{4em}
@@ -142,7 +144,8 @@
     {\parindent \z@ \centering \reset@font
         \par\bigskip\nobreak
         \interlinepenalty\@M
-        {\Huge #1}\par\nobreak
+        \openup 1em
+        {\Huge\linespread{1.3} #1}\par\nobreak\openup -1em
             \vskip40\p@
     }
     \addcontentsline{toc}{chapter}{#1}
@@ -153,7 +156,8 @@
     {\parindent \z@ \centering \reset@font
         \par\bigskip\nobreak
         \interlinepenalty\@M
-        {\Huge #1}\par\nobreak
+        \openup 1em
+        {\Huge #1}\par\nobreak\openup -1em
             \vskip40\p@
     }
 }
@@ -199,10 +203,10 @@
 
 \input{01/arc.tex}
 \input{02/arc.tex}
+\input{03/arc.tex}
+\input{04/arc.tex}
 
 \begin{comment}
-    \input{03/arc.tex}
-    \input{04/arc.tex}
     \input{05/arc.tex}
     \input{06/arc.tex}
     \input{07/arc.tex}

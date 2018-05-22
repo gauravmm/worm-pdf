@@ -201,22 +201,33 @@
 % begin main matter
 \mainmatter
 
+\begin{comment}
+% Book One
 \input{01/arc.tex}
 \input{02/arc.tex}
 \input{03/arc.tex}
 \input{04/arc.tex}
+
+% Book Two
+\setcounter{part}{4}
 \input{05/arc.tex}
 \input{06/arc.tex}
 \input{07/arc.tex}
+
+% Book Three
+\setcounter{part}{7}
 \input{08/arc.tex}
 \input{09/arc.tex}
 \input{10/arc.tex}
+\end{comment}
+
+% Book Four
+\setcounter{part}{10}
+\input{11/arc.tex}
+\input{12/arc.tex}
+\input{13/arc.tex}
 
 \begin{comment}
-    
-    \input{11/arc.tex}
-    \input{12/arc.tex}
-    \input{13/arc.tex}
     \input{14/arc.tex}
     \input{15/arc.tex}
     \input{16/arc.tex}
@@ -239,6 +250,9 @@
     \input{ep/arc.tex}
 \end{comment}
 
+
 % begin back matter
+\backmatter
+\cleardoublepage
 
 \end{document}
